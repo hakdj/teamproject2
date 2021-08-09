@@ -6,14 +6,53 @@
 
 
 
+![image-20210809153405889](../typora/image/image-20210809153405889.png)
+
+![image-20210809153416884](../typora/image/image-20210809153416884.png)
+
+
+
+
+
+### **21.08.09 프로젝트 2 회의록**
+
+* 기술 과제
+  * 사이트 로그인 구현
+    * DB에 테이블이 3개 (회원정보 | 독립변수 | 종속변수)
+  * 시나리오
+    * 로그인(member_info 테이블)
+    * 독립변수(독립변수 table에 입력) 입력
+    * 종속변수(SELECT 보여지고 종속변수 테이블 저장) 확인
+  * 독립변수 설정
+    * supported (경제적 지원을 받는 여부)
+      * O / X / 무응답
+      * 월 지원 금액
+      * 부모님 월 평균 소득
+    * 대학관련
+      * univ_type(전문대학, 4년제 대학, 교육대)
+      * univ_major(졸업한 전공 계열)
+      * univ_area(졸업 대학의 소재지)
+    * 직장을 선택할 때 근로 소득의 중요도
+
+
+
+
+
 ### **:: 주말 과제**
 
 * 부트 스트랩 골라오기 2개씩(각 로컬에 돌려보는 것 까지)
 
   현수님 
+
+  *  https://html5up.net/editorial
+  * https://themewagon.com/themes/free-responsive-html5-admin-dashboard-template-next-angular-8/
+
   민성님 
   병현님 
   세령님
+
+  * https://startbootstrap.com/theme/creative
+    https://themewagon.com/themes/free-bootstrap-5-html5-commercial-template-purple-buzz/
 
 * 머신러닝 기법 골라오기 
 
