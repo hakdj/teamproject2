@@ -23,3 +23,4 @@ class Sql:
             WHERE u.user_id = '%s'
          """;
     resultinsert = "INSERT INTO result VALUES (NULL, '%s', '%s', CURRENT_DATE())";
+
