@@ -8,6 +8,7 @@
 {% load static %}
 	<head>
 		<title>Editorial by HTML5 UP</title>
+		<script src="http://code.jquery.com/jquery-1.7.js"></script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
@@ -23,7 +24,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+									<a href="index.html" class="logo"><strong>Hello</strong> by GOMS</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -37,7 +38,7 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Hi, I’m Editorial<br />
+											<h1>Hi, We're GOMS<br />
 											by HTML5 UP</h1>
 											<p>A free and fully responsive site template</p>
 										</header>
@@ -54,44 +55,75 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Erat lacinia</h2>
+										<h2>FORM</h2>
 									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Portitor ullamcorper</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Sapien veroeros</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Quam lorem ipsum</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Sed magna finibus</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-									</div>
+									<form method="post" action="#">
+														<div class="row gtr-uniform">
+															<div class="col-6 col-12-xsmall">
+																<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+															</div>
+															<div class="col-6 col-12-xsmall">
+																<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+															</div>
+															<div class="col-12">
+																<select name="demo-schooltype" id="demo-schooltype">
+																	<option value="">- School Type -</option>
+																	<option value="1">2~3년제</option>
+																	<option value="1">4년제</option>
+																	<option value="1">교육대</option>
+																</select>
+															</div>
+															<!-- Break -->
+															<div class="col-12">
+																<select name="demo-category" id="demo-category">
+																	<option value="">- Category -</option>
+																	<option value="1">Manufacturing</option>
+																	<option value="1">Shipping</option>
+																	<option value="1">Administration</option>
+																	<option value="1">Human Resources</option>
+																</select>
+															</div>
+															<!-- Break -->
+															<div class="col-4 col-12-small">
+																<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+																<label for="demo-priority-low">Low</label>
+															</div>
+															<div class="col-4 col-12-small">
+																<input type="radio" id="demo-priority-normal" name="demo-priority">
+																<label for="demo-priority-normal">Normal</label>
+															</div>
+															<div class="col-4 col-12-small">
+																<input type="radio" id="demo-priority-high" name="demo-priority">
+																<label for="demo-priority-high">High</label>
+															</div>
+															<!-- Break -->
+															<div class="col-6 col-12-small">
+																<input type="checkbox" id="demo-copy" name="demo-copy">
+																<label for="demo-copy">Email me a copy</label>
+															</div>
+															<div class="col-6 col-12-small">
+																<input type="checkbox" id="demo-human" name="demo-human" checked>
+																<label for="demo-human">I am a human</label>
+															</div>
+															<!-- Break -->
+															<div class="col-12">
+																<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+															</div>
+															<!-- Break -->
+															<div class="col-12">
+																<ul class="actions">
+																	<li><input type="submit" value="Send Message" class="primary" /></li>
+																	<li><input type="reset" value="Reset" /></li>
+																</ul>
+															</div>
+														</div>
+													</form>
 								</section>
 
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ipsum sed dolor</h2>
+										<h2>추천강의</h2>
 									</header>
 									<div class="posts">
 										<article>
@@ -166,7 +198,7 @@
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
+										<li><a href="generic.html">Team</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<li>
 											<span class="opener">Submenu</span>
@@ -201,15 +233,15 @@
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="{% static 'assets/images/pic07.jpg' %}" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="{% static 'assets/images/pic08.jpg' %}" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="{% static 'assets/images/pic09.jpg' %}" alt="" /></a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 									</div>
@@ -243,11 +275,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
 
 	</body>
 </html>
