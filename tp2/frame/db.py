@@ -1,7 +1,7 @@
 import pymysql;
 
 config = {
-    'database': 'tp2',
+    'database': 'goms',
     'user': 'tp2',
     'password': '644546',
     'host':'127.0.0.1',

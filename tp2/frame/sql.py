@@ -6,7 +6,7 @@ class Sql:
     userupdate = "UPDATE users SET pwd='%s',name='%s' WHERE user_id= '%s' ";
 
     udatalist = """ SELECT a.* FROM udata a INNER JOIN users u ON a.id=u.user_id
-                    WHERE u.id='%s'
+                    WHERE u.user_id='%s'
                 """;
     udatalistone = "SELECT * FROM udata WHERE data_id= %d ";
     udatainsert = """INSERT INTO udata VALUES
@@ -22,5 +22,5 @@ class Sql:
          SELECT a.result, a.resdate FROM res a INNER JOIN users u ON a.id=u.user_id
             WHERE u.user_id = '%s'
          """;
-    resultinsert = "INSERT INTO result VALUES (NULL, '%s', '%s', CURRENT_DATE())";
+    resultinsert = "INSERT INTO res VALUES (NULL, '%s', '%s', CURRENT_DATE())";
 
