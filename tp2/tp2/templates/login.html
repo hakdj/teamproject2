@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+  </head>
+
+  <body width="100%" height="100%">
+    <form action="loginimpl" method="post" class="loginForm">
+        {% csrf_token %}
+      <h2>GOMS 로그인</h2>
+      <div class="idForm">
+        <input type="text" name="user_id" class="id" placeholder="ID">
+      </div>
+      <div class="passForm">
+        <input type="password" name="pwd" class="pw" placeholder="PW">
+      </div>
+      <button type="submit" class="btn" onclick="button()">
+        LOGIN
+      </button>
+      <script>
+
+      </script>
+      <div class="bottomText">
+        <a href="register.html">회원가입</a>
+      </div>
+    </form>
+  </body>
+</html>

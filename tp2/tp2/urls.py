@@ -24,5 +24,11 @@ urlpatterns = [
     path('index.html', views.index, name='index'),
     path('elements.html', views.elements, name='elements'),
     path('generic.html', views.generic, name='generic'),
+    path('register.html', views.register, name='register'),
+    path('login.html', views.login, name='login'),
+    path('useraddimpl.html', views.useraddimpl, name='useraddimpl'),
+
+    path('loginimpl', views.loginimpl, name='loginimpl')
+
 
 ]
