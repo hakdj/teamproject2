@@ -14,19 +14,21 @@ class ResDb(Db):
             raise Exception;
         finally:
             super().close(cursor,conn);
-    def select(self,id):
+    def select(self):
         all = [];
         conn = super().getConnection();
         cursor = conn.cursor();
-        cursor.execute(Sql.resultlist % id);
+        cursor.execute(Sql.resultlist);
         result = cursor.fetchall();
         for c in result:
-            res = Res(c[0],c[1]);
+            res = Res(c[0],c[1],c[2],c[3]);
             all.append(res);
         super().close(cursor,conn);
         return all;
 
 if __name__ == '__main__':
-    result = ResDb().select();
+    result=ResDb().select();
     for r in result:
         print(r);
+
+

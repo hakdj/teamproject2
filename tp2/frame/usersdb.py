@@ -1,4 +1,5 @@
 from frame.db import Db
+from frame.error import ErrorCode
 from frame.sql import Sql
 from frame.value import Users
 
@@ -46,7 +47,7 @@ class UsersDB(Db):
         cursor = conn.cursor();
         cursor.execute(Sql.userlistone % user_id);
         c = cursor.fetchone();
-        user = Users(c[0],c[1],c[2]);
+        user = Users(c[0],c[1],c[2],c[3],c[4],c[5]);
         super().close(cursor,conn);
         return user;
 
@@ -57,7 +58,27 @@ class UsersDB(Db):
         cursor.execute(Sql.userlist);
         result = cursor.fetchall();
         for c in result:
-            users = Users(c[0],c[1],c[2]);
+            users = Users(c[0],c[1],c[2],c[3],c[4],c[5]);
             all.append(users);
         super().close(cursor,conn);
         return all;
+
+if __name__ == '__main__':
+    # result = UsersDB().select();
+    # for r in result:
+    #     print(r);
+    cust = UsersDB().selectone('id01');
+    print(cust);
+    # try:
+    #     UsersDB().delete('id04');
+    #     print('OK');
+    # except:
+    #     print(ErrorCode.e0001);
+
+    # UsersDB().insert('id01','pwd01','이세령','03@d','010');
+
+    # try:
+    #     UsersDB().update('id01','pwd01','이말자');
+    #     print('OK');
+    # except:
+    #     print(ErrorCode.e0001);

@@ -1,9 +1,10 @@
 from frame.db import Db
+from frame.error import ErrorCode
 from frame.sql import Sql
 from frame.value import Udata
 
 
-class Udatadb(Db):
+class UdataDb(Db):
 
     def insert(self,id,schooltype,major,graduy,age,intern,toeic,tosp,train,jobseek,cert):
         try:
@@ -60,6 +61,17 @@ class Udatadb(Db):
         return all;
 
 if __name__ == '__main__':
-    result = Udatadb().select();
+    # UdataDb().insert('hakdj',2,'physics',2019,30,1,800,4,2,2,4);
+
+    result=UdataDb().select();
     for r in result:
         print(r);
+
+    # try:
+    #     UdataDb().update('hakdj',4,'physics',2019,30,1,800,6,6,6,8);
+    #     print('OK');
+    # except:
+    #     print(ErrorCode.e0001);
+
+    result=UdataDb().selectone('hakdj');
+    print(result);

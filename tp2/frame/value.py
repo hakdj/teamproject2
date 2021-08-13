@@ -8,7 +8,7 @@ class Users:
         self.regdate = regdate;
     def __str__(self):
         return self.user_id+' '+self.pwd+' '+self.name+' '+self.email+' '\
-               +self.phone+' '+self.regdate;
+               +self.phone+' '+str(self.regdate);
 
 class Udata:
     def __init__(self, data_id, id, schooltype, major, graduy, age, intern, toeic, tosp, train, jobseek, cert ):
